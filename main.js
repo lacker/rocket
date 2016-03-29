@@ -1,7 +1,4 @@
-const args = process.argv.slice(2);
-if (args.length < 1) {
-  console.log('Pass some 🚀 as an argument.');
-}
+const readline = require('readline');
 
 // TODO: make this work - it doesn't seem to pass emoji right
 const rocketEval = (code) => {
@@ -15,4 +12,9 @@ const rocketEval = (code) => {
   }
 }
 
-console.log(rocketEval(args[0]));
+const i = readline.createInterface(process.stdin, process.stdout, null);
+
+i.question('⏩', (text) => {
+  console.log('text:', text);
+  console.log(rocketEval(text));
+});

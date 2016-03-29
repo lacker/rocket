@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/lacker/rocket/issues"
   },
-  "homepage": "https://github.com/lacker/rocket#readme"
+  "homepage": "https://github.com/lacker/rocket#readme",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
 }
